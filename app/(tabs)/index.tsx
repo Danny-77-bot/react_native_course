@@ -1,63 +1,39 @@
-import { Image, StyleSheet, Text, View } from "react-native";
+import { ScrollView, StyleSheet } from "react-native";
+import ProfileCard from "../components/profileCard";
+
 
 export default function HomeScreen() {
+
   return (
-    <View style={styles.container}>
+    <ScrollView contentContainerStyle={styles.container}>
 
-      <View style={styles.card}>
+      <ProfileCard
+        name="Daniel Melaku"
+        job="React Native Developer"
+        image="https://i.pravatar.cc/300?img=1"
+      />
 
-        <Image
-          source={require('../assets/images/profile.jpg')} 
-          style={styles.image}
-        />
+      <ProfileCard
+        name="John Doe"
+        job="UI/UX Designer"
+        image="https://i.pravatar.cc/300?img=2"
+      />
 
-        <Text style={styles.name}>
-          Daniel Melaku
-        </Text>
+      <ProfileCard
+        name="Sara Smith"
+        job="Backend Developer"
+        image="https://i.pravatar.cc/300?img=3"
+      />
 
-        <Text style={styles.job}>
-          MERN & React Native Developer
-        </Text>
-
-      </View>
-
-    </View>
+    </ScrollView>
   );
 }
 
 const styles = StyleSheet.create({
 
   container: {
-    flex: 1,
-    backgroundColor: "#ddd",
-    justifyContent: "center",
-    alignItems: "center",
-  },
-
-  card: {
-    width: 300,
-    backgroundColor: "white",
     padding: 20,
-    borderRadius: 20,
-    alignItems: "center",
-  },
-
-  image: {
-    width: 120,
-    height: 120,
-    borderRadius: 60,
-  },
-
-  name: {
-    fontSize: 24,
-    fontWeight: "bold",
-    marginTop: 15,
-  },
-
-  job: {
-    fontSize: 16,
-    color: "gray",
-    marginTop: 5,
+    backgroundColor: "#ddd",
   },
 
 });
