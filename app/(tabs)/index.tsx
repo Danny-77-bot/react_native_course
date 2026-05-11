@@ -7,9 +7,7 @@ export default function HomeScreen() {
       <View style={styles.card}>
 
         <Image
-          source={{
-            uri: "https://i.pravatar.cc/300",
-          }}
+          source={require('../assets/images/profile.jpg')} 
           style={styles.image}
         />
 
