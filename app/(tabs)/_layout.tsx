@@ -7,6 +7,10 @@ export default function TabLayout() {
       <Tabs.Screen name="about" options={{ title: 'About' }} />
       <Tabs.Screen name="contact" options={{ title: 'Contact' }} />
         <Tabs.Screen name="counter" options={{ title: 'Counter' }} />
+        <Tabs.Screen name="darktheme" options={{ title: 'DarkMode' }} />
+        <Tabs.Screen name="Favorite" options={{ title: 'favorite' }} />
+        <Tabs.Screen name="inputText" options={{title:"Form"}} />
+
     </Tabs>
   );
 }
