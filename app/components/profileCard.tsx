@@ -19,6 +19,9 @@ export default function ProfileCard(props: any) {
       <Text style={styles.job}>
         {props.job}
       </Text>
+        <Text style={styles.country}>
+        {props. country}
+      </Text>
 
     </View>
   );
@@ -50,5 +53,10 @@ const styles = StyleSheet.create({
     color: "gray",
     marginTop: 5,
   },
+  country:{
+  color: "#333",        // or "gray", "#666", etc.
+  marginTop: 5,
+  fontSize: 16,
+  } 
 
 });
